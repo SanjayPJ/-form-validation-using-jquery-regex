@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    
+    <title>Form Validation - RegEx & Jquery</title>
+    <style>
+    body{
+    font-family: 'Cabin', sans-serif;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="my-5 text-center" style="text-decoration: underline;">Form validation - RegEx & jQuery</h3>
+      <form class="my-5">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="input-email" placeholder="Email">
+            <div class="alert alert-danger mt-2 mb-0 alert-email" role="alert">
+              Pattern mismatch - Invalid Email <br>
+              Email Validation as per RFC2822 standards.
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="input-password" placeholder="Password">
+            <div class="alert alert-danger mt-2 mb-0 alert-password" role="alert">
+              Pattern mismatch - Invalid password <br>
+              - at least 8 characters <br>
+              - must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number <br>
+              - Can contain special characters
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="input-address" placeholder="1234 Main St">
+          <div class="alert alert-danger mt-2 mb-0 alert-address" role="alert">
+            Required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="input-address2" placeholder="Apartment, studio, or floor">
+          <div class="alert alert-danger mt-2 mb-0 alert-address2" role="alert">
+            Required
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="input-city">
+            <div class="alert alert-danger mt-2 mb-0 alert-city" role="alert">
+              Required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="input-state" class="form-control">
+              <option selected value="nothing">Choose...</option>
+              <option value="1">Kerala</option>
+              <option value="1">Jaipur</option>
+              <option value="1">Karnadaka</option>
+              <option value="1">Thamilnadu</option>
+            </select>
+            <div class="alert alert-danger mt-2 mb-0 alert-state" role="alert">
+              Required
+            </div>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="input-zip">
+            <div class="alert alert-danger mt-2 mb-0 alert-zip" role="alert">
+              Pattern mismatch - Invalid zip
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="input check">
+            <label class="form-check-label" for="gridCheck">
+              I Agree
+            </label>
+          </div>
+          <div class="alert alert-danger mt-2 mb-0 alert-check" role="alert">
+            You must agree our terms and policies.
+          </div>
+        </div>
+        <button class="btn btn-primary mt-3 check">Sign in</button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
